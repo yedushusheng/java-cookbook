@@ -3,3 +3,5 @@
 
 2、异常处理
 常见手段：try catch finally throws
+
+finally:无论是否出现异常，finally中的代码都会被执行
