@@ -45,4 +45,5 @@ public class Vector<E>    extends AbstractList<E>
 他们的区别也在于，Vector是线程安全的类，而ArrayList是非线程安全的。
 
 5、死锁
+6、交互
 
