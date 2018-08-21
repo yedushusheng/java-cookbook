@@ -35,3 +35,11 @@ StringBuffer的方法都是有synchronized修饰的
 StringBuffer 是线程安全的
 StringBuilder 是非线程安全的
 所以当进行大量字符串拼接操作的时候，如果是单线程就用StringBuilder会更快些，如果是多线程，就需要用StringBuffer 保证数据的安全性
+
+ArrayList类的声明：
+public class ArrayList<E> extends AbstractList<E>
+        implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+Vector类的声明：
+public class Vector<E>    extends AbstractList<E>
+    implements List<E>, RandomAccess, Cloneable, java.io.Serializable 
+他们的区别也在于，Vector是线程安全的类，而ArrayList是非线程安全的。
