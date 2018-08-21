@@ -9,3 +9,10 @@
 2). 实现Runnable接口
 3). 匿名类的方式
 注： 启动线程是start()方法，run()并不能启动一个新的线程
+
+3、线程常用方法
+sleep	当前线程暂停	
+join	加入到当前线程中	
+setPriority	线程优先级	
+yield	临时暂停	
+setDaemon	守护线程
