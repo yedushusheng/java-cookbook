@@ -1,2 +1,5 @@
 1、什么是Tomcat？
 Tomcat是常见的免费的web服务器. 可以使用tomcat利用ip访问html文件（当然也可以本地直接打开html访问）。
+
+2、如何启动Tomcat？
+Windows：下载Tomcat.rar-->解压后执行/tomcat/bin/startup.bat批处理文件--启动
