@@ -3,3 +3,8 @@ Tomcat是常见的免费的web服务器. 可以使用tomcat利用ip访问html文
 
 2、如何启动Tomcat？
 Windows：下载Tomcat.rar-->解压后执行/tomcat/bin/startup.bat批处理文件--启动
+
+3、如何部署Tomcat？
+部署一个功能完备的web应用 有很多种方式
+如果只是部署一个test.html，很简单把test.html 复制到\tomcat\webapps\ROOT目录下，就可以通过 http://127.0.0.1:8080/test.html 访问了
+
