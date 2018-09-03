@@ -8,3 +8,9 @@ Windows：下载Tomcat.rar-->解压后执行/tomcat/bin/startup.bat批处理文�
 部署一个功能完备的web应用 有很多种方式
 如果只是部署一个test.html，很简单把test.html 复制到\tomcat\webapps\ROOT目录下，就可以通过 http://127.0.0.1:8080/test.html 访问了
 
+4、默认8080端口
+8080是tomcat默认使用的端口号
+平时上网的网址，比如 http://www.baidu.com/index.html 是没有端口号的，此时采用的就是8080
+（一般在实际应用中会设置一个默认端口的，但是企业内部的网络一般会修改默认端口）
+
+
