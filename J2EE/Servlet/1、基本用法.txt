@@ -1,0 +1,2 @@
+1、什么是Tomcat？
+Tomcat是常见的免费的web服务器. 可以使用tomcat利用ip访问html文件（当然也可以本地直接打开html访问）。
