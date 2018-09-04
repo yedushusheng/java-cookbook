@@ -1,2 +1,6 @@
-
-
+1、什么是Servlet？
+Servlet 本身不能独立运行，需要在一个web应用中运行的，而一个web应用是部署在tomcat中的 
+所以开发一个servlet需要如下几个步骤 
+（1）创建web应用项目 
+（2）编写servlet代码 
+（3）部署到tomcat中 
