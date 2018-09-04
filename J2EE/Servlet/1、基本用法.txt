@@ -4,3 +4,10 @@ Servlet 本身不能独立运行，需要在一个web应用中运行的，而一
 （1）创建web应用项目 
 （2）编写servlet代码 
 （3）部署到tomcat中 
+
+2、基本步骤
+（1）创建工程
+a.File->New->Other->Java->Java Project 
+这种方式需要我们手动生成各类配置文件
+b.File->New->Other-Web->Dynamic Web Project
+这是eclipse ee创建项目的方式，它会把各种tomcat,相关配置文件的生成都自动做掉了。 而这些细节，恰恰就是你需要学习和掌握的。 所以对于初学者不建议使用这种方式。
