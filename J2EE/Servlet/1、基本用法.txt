@@ -21,4 +21,12 @@ b.File->New->Other-Web->Dynamic Web Project
 web.xml提供路径与servlet的映射关系，把/hello这个路径，映射到 HelloServlet这个类上
 <servlet> 标签下的 <servlet-name>与 <servlet-mapping> 标签下的 <servlet-name> 必须一样
 <servlet-name>与<servlet-class>可以不一样，但是为了便于理解与维护，一般都会写的一样。
+（5）配置tomcat的server.xml 
+打开tomcat/conf/sever.xml
+在 <Host name="localhost" 下面加一句
+<Context path="/" docBase="e:\\project\\j2ee\\web" debug="0" reloadable="false" />
+path="/" 就表示直接通过 http://127.0.0.1/hello 就可以访问网页了。
+如果设置为
+<Context path="/j2ee" docBase="e:\\project\\j2ee\\web" debug="0" reloadable="false" />
+那么表示需要通过 http://127.0.0.1/j2ee/hello才能访问呢
 
