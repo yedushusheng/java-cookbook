@@ -11,3 +11,5 @@ a.File->New->Other->Java->Java Project
 这种方式需要我们手动生成各类配置文件
 b.File->New->Other-Web->Dynamic Web Project
 这是eclipse ee创建项目的方式，它会把各种tomcat,相关配置文件的生成都自动做掉了。 而这些细节，恰恰就是你需要学习和掌握的。 所以对于初学者不建议使用这种方式。
+（2）导入servlet-api.jar包
+右键点击项目 -> properties -> Java Build Path ->Libraries -> Add External JARs
