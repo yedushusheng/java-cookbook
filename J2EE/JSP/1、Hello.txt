@@ -1,9 +1,17 @@
 一个JSP工程的基本步骤：
-1、在web目录下下新建一个文件hello.jsp，内容如下：
+1.在web目录下下新建一个文件hello.jsp，内容如下：
 <%@page contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*"%>
 Hello
 <br>
 <%=new Date().toLocaleString()%>
-2、jsp文件被编译为java文件
+2.jsp文件被编译为java文件
 即，hello.jsp-->hello_jsp.java
+
+JSP文件翻译过程：
+1.把 hello.jsp转译为hello_jsp.java
+2.hello_jsp.java 位于\tomcat\work\Catalina\localhost\_\org\apache\jsp
+3.hello_jsp.java是一个servlet
+4.把hello_jsp.java 编译为hello_jsp.class
+5.执行hello_jsp，生成html
+6.通过http协议把html 响应返回给浏览器
