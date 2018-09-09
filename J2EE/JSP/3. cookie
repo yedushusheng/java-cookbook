@@ -3,3 +3,16 @@ Cookie是一种浏览器和服务器交互数据的方式。
 Cookie是由服务器端创建，但是不会保存在服务器。
 创建好之后，发送给浏览器。浏览器保存在用户本地。
 下一次访问网站的时候，就会把该Cookie发送给服务器。
+
+2. 设置cookie
+在web目录下创建一个文件 setCookie.jsp
+Cookie c = new Cookie("name", "Gareen");
+创建了一个cookie,名字是"name" 值是"Gareen"
+c.setMaxAge(24 * 60 * 60);
+表示这个cookie可以保留一天，如果是0，表示浏览器一关闭就销毁 
+c.setPath("127.0.0.1");
+Path表示服务器的主机名，只有浏览器通过这个主机名访问服务器的时候，才会提交这个cookie到服务端
+response.addCookie(c);
+通过response把这个cookie保存在浏览器端
+访问地址： 
+http://127.0.0.1/setCookie.jsp
