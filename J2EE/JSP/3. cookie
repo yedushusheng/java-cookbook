@@ -16,3 +16,18 @@ response.addCookie(c);
 通过response把这个cookie保存在浏览器端
 访问地址： 
 http://127.0.0.1/setCookie.jsp
+
+3. 获取cookie
+在web目录下创建文件getCookie.jsp
+然后访问网页:
+http://127.0.0.1/getCookie.jsp
+Cookie[] cookies  = request.getCookies();
+表示获取所有浏览器传递过来的cookie 
+if (null != cookies ) 
+如果浏览器端没有任何cookie，得到的Cookie数组是null 
+for (int d = 0; d <= cookies.length - 1; d++) {
+   out.print(cookies[d].getName() + ":" + cookies[d].getValue() + "<br>");
+}
+遍历所有的cookie
+可以看到name:Gareen，这个在setCookie.jsp中设置的cookie
+注；JSESSIONID 这个不是我们自己设置的cookie，这是tomcat设置的cookie，会在下一章session的学习中用到通过HTTP调试工具也可以看到浏览器在请求信息里提交了这个Cookie。
