@@ -45,3 +45,9 @@ hello Struts2
 (6) 部署在tomcat中，重启测试
 部署在Tomcat中，重启tomcat，然后访问地址，观察效果
 http://127.0.0.1:8080/struts/index
+
+3. 基本思路
+(1). 所有的访问都会被web.xml中配置的Struts 的 Filter所拦截
+(2). 拦截之后，就进入struts的工作流程
+(3). 访问的地址是/index,根据struts按照 struts.xml中的配置，服务端跳转到index.jsp
+(4). 显示index.jsp的内容
