@@ -1,0 +1,2 @@
+1. 概述
+Struts2 是基于MVC的WEB框架。
