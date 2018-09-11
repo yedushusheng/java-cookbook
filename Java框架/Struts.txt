@@ -1,2 +1,47 @@
 1. 概述
 Struts2 是基于MVC的WEB框架。
+
+2. Hello struts
+(1) eclipse中创建Web动态项目struts
+(2) 导入jar包(WEB-INF/lib)
+(3) 新建web.xml
+在WEB-INF目录下新建web.xml,其中配置了一个 Filter, 所有的请求都被过滤给了这个 Filter org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+<web-app>
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>
+            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+        </filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>       
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ 
+</web-app>
+(4) 配置struts.xml
+在src目录下创建一个struts.xml文件:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+  <package name="basicstruts" extends="struts-default">
+ 
+  <action name="index">
+    <result>index.jsp</result>
+  </action>   
+ 
+</package>
+ 
+</struts>
+(5) 创建index.jsp
+在web目录下创建index.jsp:
+hello Struts2 
+(6) 部署在tomcat中，重启测试
+部署在Tomcat中，重启tomcat，然后访问地址，观察效果
+http://127.0.0.1:8080/struts/index
