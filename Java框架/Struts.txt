@@ -122,3 +122,11 @@ public class ProductAction {
 注： 严格地说，是Struts通过getProudct()方法返回product对象，然后再把product对象通过request.setAttribute("product", product) 放在"product" 这个key上，这样就方便EL表达式去取出来了
 <%@page isELIgnored="false"%>
 ${product.name}
+
+原理：
+1. 访问路径 /showProduct
+2. 所有访问都被struts的filter所拦截，并进入struts的工作流程
+3. 根据配置文件struts.xml, 会执行ProductAction的show方法
+4. 在show方法中，将实例属性product指向一个新的对象，并设置名称为iphone7
+5. 服务端跳转到show.jsp
+6. 在show.jsp中，访问ProductAction.getProduct() 获取实例属性product,并显示其名称iphone7
