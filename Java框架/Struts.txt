@@ -51,3 +51,26 @@ http://127.0.0.1:8080/struts/index
 (2). 拦截之后，就进入struts的工作流程
 (3). 访问的地址是/index,根据struts按照 struts.xml中的配置，服务端跳转到index.jsp
 (4). 显示index.jsp的内容
+
+4. 显示数据到jsp
+(1). Product.java 用于存放数据
+Model层使用一个简单的Product用于存放数据:
+package com.how2java.bean;
+ 
+public class Product {
+ 
+    int id;
+    String name;
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
