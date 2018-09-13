@@ -190,3 +190,11 @@ public class ProductAction {
         this.product = product;
     }
 }
+原理：
+1. 访问路径 /addProduct
+2. 所有访问都被struts的filter所拦截，并进入struts的工作流程
+3. 根据配置文件struts.xml, 会执行ProductAction的add方法
+4. 在add方法执行之前，Struts生成一个新的product对象，并把页面传递过来的name设置在该对象上，接着把该对象通过setProduct()方法，注入ProductAction
+5. 服务端跳转到show.jsp
+6. 在show.jsp中，访问ProductAction.getProduct() 获取注入的product,并显示其名称
+
