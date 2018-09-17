@@ -1,0 +1,4 @@
+1. 概念
+Spring是一个基于IOC和AOP的结构J2EE系统的框架 
+IOC 反转控制 是Spring的基础，Inversion Of Control ，简单说就是创建对象由以前的程序员自己new 构造方法来调用，变成了交由Spring创建对象 
+DI 依赖注入 Dependency Inject. 简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。 
