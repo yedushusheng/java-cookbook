@@ -1,19 +1,17 @@
 1. 装箱/拆箱
 （1）封装类
-所有的基本类型，都有对应的类类型 
-比如int对应的类是Integer 
-这种类就叫做封装类
+所有的基本类型,都有对应的类类型,比如int对应的类是Integer,这种类就叫做封装类.
+说明：为什么连数字都设置为了类呢？原因在于Java面向对象的思想，连基本数据类型也干脆给做成对象，都是面向对象了。
 
 （2）Number类
-数字封装类有 
-Byte,Short,Integer,Long,Float,Double 
+数字封装类有:Byte,Short,Integer,Long,Float,Double 
 这些类都是抽象类Number的子类
 
 （3）自动装箱
-不需要调用构造方法，通过=符号自动把 基本类型 转换为 类类型 就叫装箱
+不需要调用构造方法，通过=符号自动把"基本类型"转换为"类类型"就叫装箱.
 
 （4）自动拆箱
-不需要调用Integer的intValue方法，通过=就自动转换成int类型，就叫拆箱
+不需要调用Integer的intValue方法，通过=就自动转换成int类型，就叫拆箱.
 
 （5）int最值
 int的最大值可以通过其对应的封装类Integer.MAX_VALUE获取
