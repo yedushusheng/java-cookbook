@@ -71,3 +71,6 @@ public class TestNumber {
 
 (2) 字符串-->数字
 用Integer的静态方法parseInt
+
+3. 数学方法
+java.lang.Math提供了一些常用的数学运算方法，并且都是以静态方法的形式存在
