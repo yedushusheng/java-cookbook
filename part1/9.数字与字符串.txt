@@ -53,3 +53,5 @@ int的最大值可以通过其对应的封装类Integer.MAX_VALUE获取
 方法1： 使用String类的静态方法valueOf 
 方法2： 先把基本类型装箱为对象，然后调用对象的toString
 
+(2) 字符串-->数字
+用Integer的静态方法parseInt
