@@ -9,6 +9,21 @@
 
 （3）自动装箱
 不需要调用构造方法，通过=符号自动把"基本类型"转换为"类类型"就叫装箱.
+package digit;
+ 
+public class TestNumber {
+ 
+    public static void main(String[] args) {
+        int i = 5;
+ 
+        //基本类型转换成封装类型
+        Integer it = new Integer(i);
+         
+        //自动转换就叫装箱
+        Integer it2 = i;
+         
+    }
+}
 
 （4）自动拆箱
 不需要调用Integer的intValue方法，通过=就自动转换成int类型，就叫拆箱.
