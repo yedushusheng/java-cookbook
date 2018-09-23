@@ -125,3 +125,18 @@ public class TestNumber {
           
     }
 }
+
+5. 字符
+(1) char对应的封装类
+char对应的封装类是Character :
+package character;
+ 
+public class TestChar {
+ 
+    public static void main(String[] args) {
+        char c1 = 'a';
+        Character c = c1; //自动装箱
+        c1 = c;//自动拆箱
+         
+    }
+}
