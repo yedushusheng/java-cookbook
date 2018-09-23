@@ -80,3 +80,5 @@ java.lang.Math提供了一些常用的数学运算方法，并且都是以静态
 %s 表示字符串
 %d 表示数字
 %n 表示换行
+(1) printf和format
+printf和format能够达到一模一样的效果，如何通过eclipse查看java源代码 可以看到，在printf中直接调用了format
